@@ -4,10 +4,12 @@ Creates a Dynamic Keyword Insertion for Thrivethemes on a Wordpress installation
 
 ## Instructions
 
-1. Add the following code to the bottom of your wp-content/themes/{theme-name}/functions.php file
+1. Add the code from the [append-to-functions.php](dynamic-keyword-insertion/append-to-functions.php) file to the bottom of your wp-content/themes/{theme-name}/functions.php file
 2. It's good practice to use child themes so updates don't override this code. See [this article for more details.] (https://thrivethemes.com/tkb_item/how-to-set-up-a-thrive-child-theme/)
 
 ## Usage
+
+Full demo here: https://demo.dallasmatthews.co.uk/dynamic-keyword-insertion/
 
 Use the shortcode in your posts & pages as [dynamic key='' default='']
 
