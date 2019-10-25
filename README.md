@@ -5,7 +5,7 @@ Creates a Dynamic Keyword Insertion on a Wordpress installation.
 ## Instructions
 
 1. Add the code from the [append-to-functions.php](dynamic-keyword-insertion/append-to-functions.php) file to the bottom of your wp-content/themes/{theme-name}/functions.php file
-2. It's good practice to use child themes so updates don't override this code. See [this article for more details.] (https://premium.wpmudev.org/blog/how-to-create-wordpress-child-theme/)
+2. It's good practice to use child themes so updates don't override this code. See (this article for more details) (https://premium.wpmudev.org/blog/how-to-create-wordpress-child-theme/]
 
 ## Usage
 
