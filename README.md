@@ -11,7 +11,7 @@ Creates a Dynamic Keyword Insertion on a Wordpress installation.
 
 Full demo here: https://stealmymarketing.com/blog/dki
 
-Use the shortcode in your posts & pages as [dynamic key='' default='']
+Use the shortcode in your posts & pages as [dki key='' default='']
 
 - Key is the key/value pair you're looking for in your URL parameter. E.g. 'http://mysite.com/my-post?city=London
 - Default can be left blank, but when passed will be the value outputted if no matching key is found in the URL. 
@@ -21,15 +21,15 @@ An example is best:
 Ex 1: 
 
 URL: http://mysite.com/my-page?city=London&offer=Free%20Shipping%20for%you
-Post: Hello and welcome to my shop based in [dynamic key='city' default='Manchester']. You qualify for [dynamic key='offer'] shipping.
+Post: Hello and welcome to my shop based in [dki key='city' default='Manchester']. You qualify for [dynamic key='offer'] shipping.
 Renders as: Hello and welcome to my shop based in London. Free shipping for you
 
 Ex 2:
 
 URL: http://mysite.com/my-page?Offer=Free%20Shipping%20for%you
-Post: Hello and welcome to my shop based in [dynamic key='city' default='Manchester']. You qualify for [dynamic key='offer'] shipping.
+Post: Hello and welcome to my shop based in [dki key='city' default='Manchester']. You qualify for [dynamic key='offer'] shipping.
 Renders as: Hello and welcome to my shop based in Manchester.
 
-// Note, because the key 'offer' was 'Offer', it wasn't found. Becuase there was no 'default' set, nothing appears. 
+Note, because the key 'offer' was 'Offer', it wasn't found. Becuase there was no 'default' set, nothing appears. 
 
 
