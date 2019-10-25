@@ -1,15 +1,5 @@
 // Add this to the end of your wp-content/theme/{themename}/functions.php file.
 
-
-/**
- * Filter Allow dynamic variables in the post/page using URL parameters
- *
- * @param 	$attributes     - Array of passed attributes, namely 'key' and 'default'
- * @var 	$key			- The key to look for in the URL/Query String array
- * @var 	$key			- The key to look for in the URL/Query String array
- *
- * @return string - returns $key, if that exists in the URL, or $default or if not $default passed, returns ""
- */
 add_shortcode('dki', 'dynamic_content');
 
 /**
@@ -30,7 +20,7 @@ function dynamic_content( $attributes ) {
 	$default = "";
 	$return = "";
 	$key = FALSE;
-	
+  
 	// Get any passed attributes & sanitise them
 	if ( ! empty( $attributes['key'] ) ) {
         $key = sanitize_text_field( $attributes['key'] );
