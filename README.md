@@ -1,15 +1,15 @@
 # Dynamic Keyword Insertion 
 
-Creates a Dynamic Keyword Insertion for Thrivethemes on a Wordpress installation.
+Creates a Dynamic Keyword Insertion on a Wordpress installation.
 
 ## Instructions
 
 1. Add the code from the [append-to-functions.php](dynamic-keyword-insertion/append-to-functions.php) file to the bottom of your wp-content/themes/{theme-name}/functions.php file
-2. It's good practice to use child themes so updates don't override this code. See [this article for more details.] (https://thrivethemes.com/tkb_item/how-to-set-up-a-thrive-child-theme/)
+2. It's good practice to use child themes so updates don't override this code. See [this article for more details.] (https://premium.wpmudev.org/blog/how-to-create-wordpress-child-theme/)
 
 ## Usage
 
-Full demo here: https://demo.dallasmatthews.co.uk/dynamic-keyword-insertion/
+Full demo here: https://stealmymarketing.com/blog/dki
 
 Use the shortcode in your posts & pages as [dynamic key='' default='']
 
@@ -30,6 +30,6 @@ URL: http://mysite.com/my-page?Offer=Free%20Shipping%20for%you
 Post: Hello and welcome to my shop based in [dynamic key='city' default='Manchester']. You qualify for [dynamic key='offer'] shipping.
 Renders as: Hello and welcome to my shop based in Manchester.
 
-// Note, becuase the key 'offer' was 'Offer', it wasn't found. Becuase there was no 'default' set, nothing appears. 
+// Note, because the key 'offer' was 'Offer', it wasn't found. Becuase there was no 'default' set, nothing appears. 
 
 
