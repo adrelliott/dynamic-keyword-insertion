@@ -35,6 +35,13 @@ function dynamic_content( $attributes ) {
 	// Check for the 'key' passed as a URL param & return $default if none passed
 	if ( $key != FALSE && array_key_exists( $key, $url_array ) ){
 		$return = sanitize_text_field( $url_array[$key] );
+
+		// NOTE: Delete one of these!
+		// Capitalise all words
+		$return  = ucwords($return);
+
+		// Capitalise first word
+		$return  = ucfirst($return);
 	}
 	else $return = $default;
 
